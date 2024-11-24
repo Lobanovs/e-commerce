@@ -16,6 +16,7 @@ public class OrderLineService {
     private final OrderLineRepository repository;
     private final OrderLineMapper mapper;
 
+    // Сохранение строки заказа
     public Integer saveOrderLine(OrderLineRequest request) {
         var order = mapper.toOrderLine(request);
 
@@ -23,6 +24,7 @@ public class OrderLineService {
 
     }
 
+    // Получение строк заказа по идентификатору заказа
     public List<OrderLineResponse> findAllByOrderId(Integer orderId) {
         return repository.findAllByOrderId(orderId).stream()
                 .map(mapper::toOrderLineResponse)

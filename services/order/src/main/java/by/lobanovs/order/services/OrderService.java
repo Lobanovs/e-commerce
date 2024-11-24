@@ -31,6 +31,7 @@ public class OrderService {
      private final OrderProducer orderProducer;
      private final PaymentClient paymentClient;
 
+     // Создание заказа
      public Integer createdOrder(OrderRequest request) {
          // check the customer --> OpenFeign
 
@@ -86,14 +87,14 @@ public class OrderService {
 
           return order.getId();
      }
-
+     // Получение всех заказов из базы данных
      public List<OrderResponse> findAll() {
           return  repository.findAll()
                   .stream()
                   .map(mapper::fromOrder)
                   .collect(Collectors.toList());
      }
-
+     // Поиск заказа по идентификатору
      public OrderResponse findById(Integer orderId) {
           return repository.findById(orderId)
                   .map(mapper::fromOrder)
