@@ -17,6 +17,7 @@ public class CustomerController {
 
     private final CustomerService service;
 
+    // Метод для создания нового клиента
     @PostMapping
     public ResponseEntity<String> createCustomer(
         @RequestBody @Valid CustomerRequest request
@@ -24,6 +25,7 @@ public class CustomerController {
         return ResponseEntity.ok(service.createCustomer(request));
     }
 
+    // Метод для обновления существующего клиента
     @PutMapping
     public ResponseEntity<Void> updateCustomer(
             @RequestBody @Valid CustomerRequest request
@@ -32,11 +34,13 @@ public class CustomerController {
         return ResponseEntity.accepted().build();
     }
 
+    // Метод для получения списка всех клиентов
     @GetMapping
     public ResponseEntity<List<CustomerResponse>> findAll( ){
         return ResponseEntity.ok(service.findAllCustomers());
     }
 
+    // Метод для проверки существования клиента по его ID
     @GetMapping("/exist/{customer-id}")
     public ResponseEntity<Boolean> existById(
             @PathVariable("customer-id") String customerId
@@ -45,6 +49,7 @@ public class CustomerController {
         return ResponseEntity.ok(service.existById(customerId));
     }
 
+    // Метод для получения клиента по его ID
     @GetMapping("/{customer-id}")
     public ResponseEntity<CustomerResponse> findById(
             @PathVariable("customer-id") String customerId
@@ -53,6 +58,7 @@ public class CustomerController {
         return ResponseEntity.ok(service.findById(customerId));
     }
 
+    // Метод для удаления клиента по его ID
     @DeleteMapping("/{customer-id}")
     public ResponseEntity<Void> delete(
             @PathVariable("customer-id") String customerId

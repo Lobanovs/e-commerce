@@ -9,7 +9,10 @@ import org.springframework.stereotype.Service;
 import java.util.Optional;
 
 @Service
+// Класс для преобразования DTO в сущности и наоборот
 public class CustomerMapper {
+
+    // Преобразует CustomerRequest в сущность Customer
     public Customer toCustomer(@Valid CustomerRequest request) {
         if(request == null) return null;
 
@@ -22,6 +25,7 @@ public class CustomerMapper {
                 .build();
     }
 
+    // Преобразует сущность Customer в DTO CustomerResponse
     public CustomerResponse fromCustomer(Customer customer) {
         return new CustomerResponse(
                 customer.getId(),

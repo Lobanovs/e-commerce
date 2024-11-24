@@ -10,6 +10,7 @@ import org.springframework.validation.annotation.Validated;
 @Getter
 @Setter
 @Validated
+// Класс Address представляет адрес клиента
 public class Address {
     private String street;
     private String houseNumber;
