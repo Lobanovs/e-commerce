@@ -4,7 +4,7 @@ import by.lobanovs.product.dto.ProductPurchaseRequest;
 import by.lobanovs.product.dto.ProductPurchaseResponse;
 import by.lobanovs.product.dto.ProductRequest;
 import by.lobanovs.product.dto.ProductResponse;
-import by.lobanovs.product.services.ProductService;
+import by.lobanovs.product.service.ProductService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;

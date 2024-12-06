@@ -6,7 +6,7 @@ import by.lobanovs.notification.dto.payment.PaymentConfirmation;
 import by.lobanovs.notification.email.EmailService;
 import by.lobanovs.notification.entity.Notification;
 import by.lobanovs.notification.entity.NotificationType;
-import by.lobanovs.notification.repositories.NotificationRepository;
+import by.lobanovs.notification.repository.NotificationRepository;
 import jakarta.mail.MessagingException;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

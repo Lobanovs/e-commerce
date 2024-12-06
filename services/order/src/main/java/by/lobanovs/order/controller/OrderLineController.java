@@ -2,7 +2,7 @@ package by.lobanovs.order.controller;
 
 
 import by.lobanovs.order.dto.order.OrderLineResponse;
-import by.lobanovs.order.services.OrderLineService;
+import by.lobanovs.order.service.OrderLineService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;

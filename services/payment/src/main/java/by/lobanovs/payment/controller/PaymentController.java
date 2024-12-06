@@ -2,7 +2,7 @@ package by.lobanovs.payment.controller;
 
 
 import by.lobanovs.payment.dto.payment.PaymentRequest;
-import by.lobanovs.payment.services.PaymentService;
+import by.lobanovs.payment.service.PaymentService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;

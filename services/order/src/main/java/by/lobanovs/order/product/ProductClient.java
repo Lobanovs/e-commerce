@@ -2,7 +2,7 @@ package by.lobanovs.order.product;
 
 import by.lobanovs.order.dto.product.PurchaseRequest;
 import by.lobanovs.order.dto.product.PurchaseResponse;
-import by.lobanovs.order.exceptions.BusinessException;
+import by.lobanovs.order.exception.BusinessException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.ParameterizedTypeReference;

@@ -2,7 +2,7 @@ package by.lobanovs.order.controller;
 
 import by.lobanovs.order.dto.order.OrderRequest;
 import by.lobanovs.order.dto.order.OrderResponse;
-import by.lobanovs.order.services.OrderService;
+import by.lobanovs.order.service.OrderService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;

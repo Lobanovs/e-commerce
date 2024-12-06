@@ -2,7 +2,7 @@ package by.lobanovs.customer.controller;
 
 import by.lobanovs.customer.dto.CustomerRequest;
 import by.lobanovs.customer.dto.CustomerResponse;
-import by.lobanovs.customer.services.CustomerService;
+import by.lobanovs.customer.service.CustomerService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;

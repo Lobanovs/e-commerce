@@ -1,7 +1,6 @@
 package by.lobanovs.order.handler;
 
-import by.lobanovs.order.exceptions.BusinessException;
-import by.lobanovs.order.handler.ErrorResponse;
+import by.lobanovs.order.exception.BusinessException;
 import jakarta.persistence.EntityNotFoundException;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.FieldError;
